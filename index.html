@@ -9,21 +9,53 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- <script type="text/javascript" src="js/1.js"></script> -->
   <style>
     * {
       margin: 0;
       padding:0;
     }
- 
+ /* header */
+
+.nav-item {
+  border-bottom: 2px solid transparent;
+  transition: .3s;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid red;
+}
+
+
+
+
+
+
 
 /* footer */
     .footer {
       color: white;
     }
 
-    .fab {
-      font-size: 1.8rem;
+    .footer-menu a {
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+  
     }
+
+    .fab, .fa-envelope {
+      font-size: 1.8rem;
+      line-height:2.8rem;
+      text-decoration: none;
+      color: white;
+    
+    }
+
+    .fa-envelope {
+      font-size: 1.7rem;
+    }
+
 
     .square {
       height: 2.8rem;
@@ -36,6 +68,7 @@
 
     .square:hover {
       cursor: pointer;
+      color: #0078d7;
     }
    .socf:hover {
       background-color: #0078d7;
@@ -49,14 +82,27 @@
     .socg:hover {
       background-color: #dd4b39;
     }
+    
+    .socm:hover {
+      background-color: #fff;
+    }
+
+    .socm:hover .fa-envelope {
+      color: black;
+      
+    }
+
     .dan p {
       font-size: 1rem;
       margin: 0;
     }
+
   </style>
 </head>
 
 <body>
+  <!-- <header id="header" class="header header--fixed hide-from-print" role="banner"> -->
+
   <div class="sticky-top container-fluid bg-secondary">
     <div class="container">
       <nav class="navbar navbar-light navbar-expand-lg">
@@ -71,7 +117,7 @@
 
           <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item ">
+            <li class="nav-item">
               <!-- domyslnie klasa active -->
               <a class="nav-link" href="#"> HOME </a>
             </li>
@@ -101,9 +147,11 @@
       </nav>
     </div>
   </div>
+  <!-- </header> -->
+
 
   <!-- 2 row -->
-  <div class="container-fluid">
+  <div class="container-fluid" style=>
     <div class="col-12 m-auto">
       <!--Carousel Wrapper-->
       <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
@@ -116,9 +164,9 @@
         <!--/.Indicators-->
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
+          <div class="carousel-item active ">
             <div class="view">
-              <img class="d-block w-100" src="img/1.jpg" alt="First slide" style="width:100%; height: calc(100vh - 84px); object-fit: cover;">
+              <img class="d-block w-100" src="img/1.jpg" alt="First slide" style="width:100%; height: calc(100vh - 84px); object-fit: cover; max-width: 1920px; max-height: 1080px;">
               <div class="mask rgba-black-light"></div>
             </div>
             <div class="carousel-caption">
@@ -129,7 +177,7 @@
           <div class="carousel-item">
             <!--Mask color-->
             <div class="view">
-              <img class="d-block w-100" src="img/2.jpg" alt="Second slide" style="width:100%; height: calc(100vh - 84px); object-fit: cover;">
+              <img class="d-block w-100" src="img/2.jpg" alt="Second slide" style="width:100%; height: calc(100vh - 84px); object-fit: cover; max-width: 1920px; max-height: 1080px;">
               <div class="mask rgba-black-strong"></div>
             </div>
             <div class="carousel-caption">
@@ -140,7 +188,7 @@
           <div class="carousel-item">
             <!--Mask color-->
             <div class="view">
-              <img class="d-block w-100" src="img/3.jpg" alt="Third slide" style="width:100%; height: calc(100vh - 84px); object-fit: cover;">
+              <img class="d-block w-100" src="img/3.jpg" alt="Third slide" style="width:100%; height: calc(100vh - 84px); object-fit: cover; max-width: 1920px; max-height: 1080px;">
               <div class="
               mask rgba-black-slight"></div>
             </div>
@@ -257,39 +305,65 @@
   <div class="footer">
     <div class="container-fluid bg-secondary mt-5">
       <div class="container">
-        <div class="row">
-          <div class="col-4 mt-3">
-            <p>Projektowanie domu, projektowanie budynków. Bydgoszcz, Inowrocał, Toruń, Gniezno, Żnin, Wągrowiec.
+
+
+        <div class="row mt-2">
+          <div class="col-4 mt-3 ">
+            <p class="text-justify">O nas - oferujemy projekty idywidualne: budynki mieszkale, użytecznosci publicznej,
+              garażowo - gospodarcze, inwentaryzacyjne budowlene i powykonawcze, aranżacje wnętrz, doradztwo
+              techniczne,
+              kompleksowa obsługa inwestycyjna. Projektowanie domu, projektowanie budynków. Adaptacje gotowych
+              projektów, Bydgoszcz, Inowrocław, Toruń, Żnin.
             </p>
           </div>
-          <div class="col-2 mt-3">
-            <p>Home
-            </p>
-            <p>Home
+          <div class="col-2 mt-3 footer-menu">
+            <p><a href="index.html">HOME</a></p>
+            <p><a href="oferta.html">OFERTA</a></p>
+            <p><a href="realizacje.html">REALIZACJE</a></p>
+            <p><a href="omnie.html">O MNIE</a></p>
+            <p><a href="kontakt.html">KONTAKT</a></p>
             </p>
           </div>
-          <div class="col-2 text-center mt-3">
-            <div class="row no-gutters d-align-flex">
-              <div class="square d-flex justify-content-center align-content-center socf mr-2"><i class="fab fa-facebook-f mx-auto my-auto"></i></div>
-              <div class="square d-flex justify-content-center align-content-center socl mr-2"><i class="fab fa-linkedin-in mx-auto my-auto"></i></div>
-              <div class="square d-flex justify-content-center align-content-center socg mr-2"><i class="fab fa-google-plus-g mx-auto my-auto"></i></div>
+
+          <div class="col-3 text-center mt-3">
+            <div class="row d-flex">
+              <div class="square d-flex justify-content-center align-content-center socf mr-2"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f mx-auto my-auto"></a></i></div>
+              <div class="square d-flex justify-content-center align-content-center socl mr-2"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in mx-auto my-auto"></i></a></div>
+              <div class="square d-flex justify-content-center align-content-center socg mr-2"><a href="https://www.google.com/"><i class="fab fa-google-plus-g mx-auto my-auto"></i></a></div>
+              <div class="square d-flex justify-content-center align-content-center socm mr-2"><a href="mailto:biuro@amtpracownia.pl" style="border:none; outline:none; text-decoration:none;"><i class="fas fa-envelope mx-auto my-auto"></i></a></div>
+
+
             </div>
           </div>
           <div class="col-3 mt-3 dan">
-            <p><i class="fas fa-thumbtack mr-1"></i>T D</p>
-            <p class="ml-4">ul. Bydgoska</p>
-            <p class="ml-4">88-200 Bydgoszcz</p>
-            <p><i class="fas fa-mobile-alt mr-1"></i>555555555</p>
-            <p><i class="fas fa-envelope mr-1"></i>Napisz do nas</p>
+            <p>AMT XXXXXXXX</p>
+            <p>architekt XXXXXXXX</p>
+            <p>ul. XXXXXXXX XX</p>
+            <p>88-XXX Bydgoszcz</p>
+            <p><i class="fas fa-mobile-alt mr-1"></i>+4XXXXXXXX</p>
           </div>
+
+        </div>
+        <div class="row">
+          <div class="col-12"></div>
+          <p>copyright &copy; 2018</p>
         </div>
       </div>
+
+
+
     </div>
+
+  </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- <script src="https://rawgithub.com/WickyNilliams/headroom.js/gh-pages/assets/scripts/main.js"></script> -->
+
+
+
 </body>
 
 </html>
