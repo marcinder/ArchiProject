@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Boostrap</title>
+  <title>Kontakt</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato|Muli:400,700|Roboto+Condensed:400,700&amp;subset=latin-ext"
     rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+
   <!-- <script type="text/javascript" src="js/1.js"></script> -->
   <style>
 
@@ -26,7 +27,7 @@
     <div class="container">
 
       <nav id="mainHeader" class="navbar navbar-light navbar-expand-lg">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="d-inline-block mr-1 align-bottom" alt="logo AMT pracownia architektury Bydgoszcz" height="85" ></a>
+        <a class="navbar-brand" href="#"><img src="img/logo.svg" class="d-inline-block mr-1 align-bottom" alt="logo AMT pracownia architektury Bydgoszcz" height="95" ></a>
 
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainmenu"
           aria-controls="mainmenu" aria-expanded="false" aria-label="navi">
@@ -51,12 +52,13 @@
             </li>
 
             <!-- <li class="nav-item">
-                  <a class="nav-link" href="#"> O mnie </a>
-                </li> -->
+              <a class="nav-link" href="#"> O mnie </a>
+            </li> -->
 
             <li class="nav-item">
               <a class="nav-link" href="kontakt.html"> Kontakt </a>
             </li>
+
           </ul>
         </div>
       </nav> <!-- #mainHeader -->
@@ -65,85 +67,79 @@
   </header>
   <!-- </header> -->
 
+  <div class="container-fluid top-lead">
+    <div class="container">
+      <h1 class="top-lead">zapraszamy do kontaku i współpracy</h1>
+    </div>
+  </div>
 
-  <!-- 2 row -->
-  <div class="container-fluid full-width-container top-carusel">
+
+
+
+  <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-12 fullwidth-col">
-          <!--Carousel Wrapper-->
-          <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-            <!--Indicators-->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-2" data-slide-to="1"></li>
-              <li data-target="#carousel-example-2" data-slide-to="2"></li>
-            </ol>
-            <!--/.Indicators-->
-            <!--Slides-->
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active ">
-                <div class="view">
-                  <img class="d-block w-100" src="img/1.jpg" alt="First slide">
-                  <div class="mask rgba-black-light"></div>
-                </div>
-                <!-- <div class="carousel-caption">
-                <h3 class="h3-responsive">Light mask</h3>
-                <p>First text</p>
-              </div> -->
-              </div>
-              <div class="carousel-item">
-                <!--Mask color-->
-                <div class="view">
-                  <img class="d-block w-100" src="img/2.jpg" alt="Second slide">
-                  <div class="mask rgba-black-strong"></div>
-                </div>
-                <!-- <div class="carousel-caption">
-                <h3 class="h3-responsive">Strong mask</h3>
-                <p>Secondary text</p>
-              </div> -->
-              </div>
-              <div class="carousel-item">
-                <!--Mask color-->
-                <div class="view">
-                  <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
-                  <div class="
-              mask rgba-black-slight"></div>
-                </div>
-                <!-- <div class="carousel-caption">
-                <h3 class="h3-responsive">Slight mask</h3>
-                <p>Third text</p>
-              </div> -->
-              </div>
+        <main class="col-12 col-md-6 contact">
+          <h4 class="contact-title">Aasdsadasd</h4>
+          <p>asdasdasd</p>
+          <p>asdasd</p>
+          <p>asdasdcz</p>
+          <p><i class="fas fa-mobile-alt mr-1"></i>+asdasdasd5</p>
+          <p><a href="mailto:"><i class="fas fa-at mr-1"></i>biurosssl</a></p>
+        </main>
+
+        <div class="col-12 col-md-6 mt-3">
+          <form action="php/contact.php" method="POST" enctype="multipart/form-data" role="form">
+            <div class="form-group">
+
+              <label for="InputName">Imię i nazwisko</label>
+              <input type="text" name="name" class="form-control mb-2" id="InputName" aria-describedby="namelHelp"
+                placeholder="" required>
+
+
+              <label for="InputTelephone">Telefon</label>
+              <input type="text" name="telefon" class="form-control mb-2" id="InputTelephone" aria-describedby="telHelp"
+                placeholder="" required>
+
+              <label for="InputMessage ">Wiadomość</label>
+              <textarea class="form-control mb-2" name="message" rows="5" id="InputMessage" required></textarea>
+
+              <label for="InputEmail">Adres e-mail</label>
+              <input type="email" name="email" class="form-control mb-2" id="InputEmail" aria-describedby="emailHelp"
+                placeholder="">
+              <small id="emailHelp" class="form-text text-muted">Akceptuję politykę prywatności</small>
+
+
 
             </div>
-            <!--/.Slides-->
-            <!--Controls-->
-            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1 required">
+              <label class="form-check-label" for="exampleCheck1"><a href="polityka.html">*Akceptuję politykę prywatności</a></label>
+            </div>
+            <button type="submit" class="btn btn-basic mb-4 w-33 mt-2">Wyślij</button>
+          </form>
+        </div>
 
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <div class="mx-auto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2394.9610017716122!2d17.972559733806847!3d53.110892600311146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313072e00c713%3A0x63ef22a094beb751!2sInowroc%C5%82awska+70%2F2%2C+85-153+Bydgoszcz!5e0!3m2!1spl!2spl!4v1538730615442"
+              width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
           </div>
         </div>
       </div>
+
     </div>
-  </div> <!-- .top-carusel -->
-
-  <!--
-  about-section
--->
-  <section class="container-fluid about-section">
-    <div class="container">
-      <p>AMT pracownia architektury</p>
-      <p>pasja doświadczenie profesjonalizm</p>
+  </div>
 
 
-  </section>
+
+
+
+
   <!-- 3 row -->
 
   <footer class="container-fluid">
@@ -165,8 +161,8 @@
           <h4 class="widget-title">Nawigacja</h4>
           <ul class="widget-nav">
             <li><a href="index.html">Home</a></li>
+            <li><a href="oferta.html">Realizacja</a></li>
             <li><a href="realizacje.html">Oferta</a></li>
-            <li><a href="oferta.html">Realizacje</a></li>
             <!-- <li><a href="o-mnie.html">O mnie</a></li> -->
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
@@ -187,11 +183,11 @@
         </div> <!-- footer widget -->
 
         <div class="col-12 col-md-6 col-lg-3 footer-widget contact-widget">
-          <h4 class="widget-title">asdsad</h4>
-          <p>asdasd</p>
-          <p>asdasd2</p>
-          <p>85-153 asdasd</p>
-          <p><i class="fas fa-mobile-alt mr-1"></i>asdasdasd</p>
+          <h4 class="widget-title">AssssssY</h4>
+          <p>asssssski</p>
+          <p>ssss</p>
+          <p>sssss</p>
+          <p><i class="fas fa-mobile-alt mr-1"></i>+sssss</p>
         </div>
       </div> <!-- footer widget -->
 
