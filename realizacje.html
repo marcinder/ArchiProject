@@ -10,13 +10,12 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato|Muli:400,700|Roboto+Condensed:400,700&amp;subset=latin-ext"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+
   <!-- <script type="text/javascript" src="js/1.js"></script> -->
-  <style>
 
-
-  </style>
 </head>
 
 <body>
@@ -24,6 +23,7 @@
 
   <header class="container-fluid top-header">
     <div class="container">
+
 
       <nav id="mainHeader" class="navbar navbar-light navbar-expand-lg">
         <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="d-inline-block mr-1 align-bottom" alt="logo AMT pracownia architektury Bydgoszcz" height="85" ></a>
@@ -65,85 +65,42 @@
   </header>
   <!-- </header> -->
 
-
-  <!-- 2 row -->
-  <div class="container-fluid full-width-container top-carusel">
+  <div class="container-fluid top-lead">
     <div class="container">
-      <div class="row">
-        <div class="col-12 fullwidth-col">
-          <!--Carousel Wrapper-->
-          <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-            <!--Indicators-->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-2" data-slide-to="1"></li>
-              <li data-target="#carousel-example-2" data-slide-to="2"></li>
-            </ol>
-            <!--/.Indicators-->
-            <!--Slides-->
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active ">
-                <div class="view">
-                  <img class="d-block w-100" src="img/1.jpg" alt="First slide">
-                  <div class="mask rgba-black-light"></div>
-                </div>
-                <!-- <div class="carousel-caption">
-                <h3 class="h3-responsive">Light mask</h3>
-                <p>First text</p>
-              </div> -->
-              </div>
-              <div class="carousel-item">
-                <!--Mask color-->
-                <div class="view">
-                  <img class="d-block w-100" src="img/2.jpg" alt="Second slide">
-                  <div class="mask rgba-black-strong"></div>
-                </div>
-                <!-- <div class="carousel-caption">
-                <h3 class="h3-responsive">Strong mask</h3>
-                <p>Secondary text</p>
-              </div> -->
-              </div>
-              <div class="carousel-item">
-                <!--Mask color-->
-                <div class="view">
-                  <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
-                  <div class="
-              mask rgba-black-slight"></div>
-                </div>
-                <!-- <div class="carousel-caption">
-                <h3 class="h3-responsive">Slight mask</h3>
-                <p>Third text</p>
-              </div> -->
-              </div>
-
-            </div>
-            <!--/.Slides-->
-            <!--Controls-->
-            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-
-          </div>
-        </div>
-      </div>
+      <h1 class="top-lead">nasze realizacje</h1>
     </div>
-  </div> <!-- .top-carusel -->
+  </div>
+  <main class="container-fluid">
+    <div class="container ">
+      <div class="row main-gallery ">
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <a href="img/1/1.jpg" data-lightbox="mygallery"><img src="img/s/1/1.jpg" class="img-fluid" alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <a href="img/2/Lazienka_Filmowa_1.jpg" data-lightbox="mygallery"> <img src="img/s/2/Lazienka_Filmowa_1.jpg" class="img-fluid" alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <a href="img/3/1.jpg" data-lightbox="mygallery"><img src="img/s/3/1.jpg" class="img-fluid" alt=""></a>
+        </div>
 
-  <!--
-  about-section
--->
-  <section class="container-fluid about-section">
-    <div class="container">
-      <p>AMT pracownia architektury</p>
-      <p>pasja doświadczenie profesjonalizm</p>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <a href="img/4/Lazienka_Pio_1.jpg" data-lightbox="mygallery" ><img src="img/s/4/Lazienka_Pio_1.jpg" class="img-fluid" alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <a href="img//5/Wielordzinny_1-1.jpg" data-lightbox="mygallery"><img src="img/s/5/Wielordzinny_1-1.jpg" class="img-fluid" alt=""></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <a href="img/6/Namiot_1.jpg" data-lightbox="mygallery"><img src="img/s/6/Namiot_1.jpg" class="img-fluid" alt=""></a>
+        </div>
+
+      </div>
 
 
-  </section>
+    </div>
+  </main>
+
+
   <!-- 3 row -->
 
   <footer class="container-fluid">
@@ -165,8 +122,8 @@
           <h4 class="widget-title">Nawigacja</h4>
           <ul class="widget-nav">
             <li><a href="index.html">Home</a></li>
+            <li><a href="oferta.html">Realizacja</a></li>
             <li><a href="realizacje.html">Oferta</a></li>
-            <li><a href="oferta.html">Realizacje</a></li>
             <!-- <li><a href="o-mnie.html">O mnie</a></li> -->
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
@@ -207,10 +164,10 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
   <script src="js/main.js"></script>
-
 
 
 

@@ -1,0 +1,34 @@
+/******************************************************************************
+gallery.CSS
+******************************************************************************/
+/* .main-gallery div {
+    position: relative;
+    width: 340px;
+    height: 260px;
+    overflow: hidden;
+    background-color: #555;
+
+}
+
+.main-gallery div span {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: black;
+    font-size: 18px;
+}
+
+.main-gallery img {
+
+    opacity: 1;
+    transition: .4s;
+
+}
+
+
+.main-gallery div:hover img {
+    cursor: pointer;
+    opacity: .3;
+    transform: scale(1.5);
+
+} */

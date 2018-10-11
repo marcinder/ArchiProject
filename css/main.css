@@ -15,7 +15,8 @@ body {
     /* max-width: 1980px; */
     margin: 0 auto;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Muli', sans-serif;
+
 }
 
 
@@ -51,6 +52,7 @@ body {
     font-size: 14px;
     border-bottom: 2px solid transparent;
     color: #555 !important;
+    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     transition: .3s;
 }
@@ -118,11 +120,6 @@ section p+p {
 .about-section {}
 
 
-/******************************************************************************
-CONTACT.CSS
-******************************************************************************/
-
-
 .top-lead {
     background-color: #F3F3F3;
 }
@@ -140,28 +137,6 @@ h1.top-lead {
     text-decoration: underline;
 }
 
-.contact-title {
-    font-size: 20px;
-}
-
-.contact p {
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-}
-
-.contact p:nth-child(4) {
-    margin-bottom: 20px;
-}
-
-.fa-at {
-    color: black;
-}
-
-main.contact p a {
-    text-decoration: none;
-    color: black;
-}
 
 
 /******************************************************************************
@@ -269,10 +244,44 @@ footer .widget-nav li {
 
 }
 
-. p {
+p {
     font-size: 1rem;
     margin: 0;
 }
 
+@media only screen and (max-width: 576px) {
 
-.copyrights {}
+    li.nav-item {
+        margin-left: 0;
+    }
+
+    section p {
+
+        font-size: 16px;
+
+    }
+
+    section p+p {
+
+        font-size: 13px;
+        word-spacing: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    li.nav-item {
+        margin-left: 0;
+    }
+
+    .offer-title h2 {
+        margin-bottom: 0;
+    }
+
+    .footer-widget {
+        margin-bottom: 16px;
+    }
+
+}
